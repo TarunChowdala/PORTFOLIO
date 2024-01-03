@@ -3,11 +3,12 @@
   scroll-behavior: smooth;
 }
 .home-container {
+  width: 100%;
   min-height: 90vh;
   background-image: linear-gradient(to right, rgb(150, 186, 208), white);
 }
 .nav-icon {
-  width: 120px;
+  width: 100px;
 }
 .nav-container {
   padding: 10px 80px 10px 80px;
@@ -67,6 +68,40 @@
   font-weight: bold;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+.nav-container-small {
+  display: none;
+}
+@media screen and (max-width: 776px) {
+  .home-name {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+  }
+  .home-para {
+    font-size: 15px;
+    text-align: center;
+  }
+  .designation {
+    font-size: 20px;
+  }
+  .home-designation {
+    text-align: center;
+  }
+  .nav-container {
+    padding: 10px;
+  }
+  .nav-icon {
+    width: 80px;
+  }
+  .nav-container {
+    display: none;
+  }
+  .nav-container-small {
+    display: flex;
+    background-color: transparent;
+  }
+}
+
 .about-container {
   min-height: 90vh;
   background-image: linear-gradient(to right, white, rgb(150, 186, 208));
@@ -118,6 +153,39 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-left: 30px;
 }
+@media screen and (max-width: 776px) {
+  .about-container {
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .profile-photo {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .image-container {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .about-description-container {
+    width: 100%;
+  }
+  .about-heading {
+    font-size: 30px;
+  }
+  .about-para {
+    font-size: 15px;
+  }
+  .about-side-headings {
+    font-size: 19px;
+  }
+  .side-heading-answer {
+    font-size: 15px;
+  }
+}
+
 .resume-contaier {
   margin-top: 0px;
   min-height: 85vh;
@@ -171,6 +239,37 @@
   margin-top: 50px;
   border-style: none;
 }
+@media screen and (max-width: 776px) {
+  .resume-contaier {
+    padding: 10px;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .graduation-icon {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+  .education-details {
+    font-size: 15px;
+  }
+  .education-text {
+    margin-bottom: 20px;
+  }
+  .resume-inner-container {
+    width: 100%;
+  }
+  .acheivement-para {
+    font-size: 15px;
+  }
+  .skill-icon {
+    font-size: 25px;
+  }
+  .education-text {
+    font-size: 30px;
+  }
+}
+
 .projects-container {
   margin-top: 0px;
   min-height: 85vh;
@@ -191,6 +290,9 @@
   align-items: flex-start;
   justify-content: space-between;
 }
+.projects-link {
+  margin-left: 0px;
+}
 .project-name {
   font-size: 20px;
 }
@@ -202,7 +304,7 @@
 }
 .contact-container {
   background-color: rgb(70, 93, 109);
-  height: 10vh;
+  padding: 10px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -216,5 +318,36 @@
 .social-icon {
   color: white;
   margin-right: 10px;
-  font-size: 20px;
+  font-size: 22px;
+}
+@media screen and (max-width: 776px) {
+  .projects-container {
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .education-text {
+    font-size: 30px;
+  }
+  .project-name {
+    font-size: 18px;
+  }
+  .project-description {
+    font-size: 15px;
+  }
+  .contact-container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .phone-number-container {
+    align-items: center;
+  }
+  .social-bottom-icons {
+    margin-bottom: 20px;
+  }
+  .social-icon {
+    font-size: 20px;
+  }
 }
